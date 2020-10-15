@@ -1,0 +1,19 @@
+[package]
+name = "nodejs"
+version = "0.1.0"
+authors = ["Logan Keenan <d.logankeenan@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "nodejs"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.5.0"
+
+[dependencies]
+neon = "0.5.0"
+rust-core = { path = "../../rust-core" }

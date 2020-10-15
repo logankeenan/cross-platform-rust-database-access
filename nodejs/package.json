@@ -1,0 +1,14 @@
+{
+  "name": "nodejs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Logan Keenan <d.logankeenan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.5.0"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
