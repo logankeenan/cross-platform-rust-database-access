@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         System.loadLibrary("rust_android")
         var databasePath = packageManager.getPackageInfo(packageName, 0).applicationInfo.dataDir
-        Log.d("rust", calldatabase("$databasePath/database.sql"))
+        Log.d("rust", calldatabase("$databasePath/database.sqlite"))
     }
 
     external fun calldatabase(to: String): String
