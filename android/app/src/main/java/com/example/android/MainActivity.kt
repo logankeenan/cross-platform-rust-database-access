@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        System.loadLibrary("rust")
+        System.loadLibrary("rust_android")
         var databasePath = packageManager.getPackageInfo(packageName, 0).applicationInfo.dataDir
         Log.d("rust", calldatabase("$databasePath/database.sql"))
     }
