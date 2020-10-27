@@ -2,6 +2,7 @@
 
 cd ./rust-ios
 
+cargo clean
 cbindgen src/lib.rs -l c > rust-ios.h
 cargo lipo --release
 
