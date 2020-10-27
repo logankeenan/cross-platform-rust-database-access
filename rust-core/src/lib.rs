@@ -30,7 +30,7 @@ pub fn database_test(database_location: String) -> String {
         })
     }).unwrap();
 
-    let option = person_iter.last().unwrap().unwrap();
+    let person = person_iter.last().unwrap().unwrap();
 
-    format!("{:?}", option)
+    format!("{:?}", person)
 }
